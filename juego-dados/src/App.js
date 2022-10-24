@@ -2,10 +2,9 @@ import React from "react";
 import Die from './Die';
 import { useState, useEffect } from "react";
 import {nanoid} from 'nanoid'
-//import useWindowSize from 'react-use/lib/useWindowSize'
 import Confetti from 'react-confetti'
 import Swal from "sweetalert2";
-
+import Header from './Header'
 export default function App() {
 
     const [tenzies, setTenzies] = useState(false)
@@ -62,22 +61,23 @@ export default function App() {
         setRolls(prevValue => prevValue += 1)
     }
     
-    //Chequear si se ganó
+    //Chequear si se ganó con alerta
+    const winAlert = () => (Swal.fire({
+        title: 'You won!!',
+        width: 600,
+        padding: '3em',
+        color: '#716add',
+        showConfirmButton: false,
+        timer: 3500
+      }))
+
     useEffect(() => {
         const valueDie = dice[0].value
         if (
             dice.every(die => die.isHeld && die.value === valueDie)
         ) {
             setTenzies(true)
-            Swal.fire({
-                title: 'You won!!',
-                text: 'Rolls: ' + rolls,
-                width: 600,
-                padding: '3em',
-                color: '#716add',
-                showConfirmButton: false,
-                timer: 4500
-              })
+            winAlert()
         }
     }, [dice]);
 
@@ -91,8 +91,7 @@ export default function App() {
   return (
     <main>
         {tenzies && (<Confetti />)}
-        <h1 className="title">Tenzies</h1>
-        <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
+        <Header />
         <div className="dice-container">
               {diceElements}
         </div>
