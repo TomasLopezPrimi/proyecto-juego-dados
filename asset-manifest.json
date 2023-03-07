@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/proyecto-juego-dados/static/css/main.62d33256.css",
+    "main.js": "/proyecto-juego-dados/static/js/main.2548e82d.js",
+    "static/media/dados2.png": "/proyecto-juego-dados/static/media/dados2.12aaac500d44b4e1d46e.png",
+    "static/media/numero6.png": "/proyecto-juego-dados/static/media/numero6.dfa1dbafc07943ecd7ff.png",
+    "static/media/dados1.png": "/proyecto-juego-dados/static/media/dados1.ff43369296d34739c7a0.png",
+    "static/media/numero5.png": "/proyecto-juego-dados/static/media/numero5.fa7c691b649a76bea46f.png",
+    "static/media/numero4.png": "/proyecto-juego-dados/static/media/numero4.f2dba61c513bc0511702.png",
+    "static/media/numero3.png": "/proyecto-juego-dados/static/media/numero3.95e602b886b5037e8cf9.png",
+    "static/media/numero2.png": "/proyecto-juego-dados/static/media/numero2.203d332bd766a551758c.png",
+    "index.html": "/proyecto-juego-dados/index.html",
+    "main.62d33256.css.map": "/proyecto-juego-dados/static/css/main.62d33256.css.map",
+    "main.2548e82d.js.map": "/proyecto-juego-dados/static/js/main.2548e82d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62d33256.css",
+    "static/js/main.2548e82d.js"
+  ]
+}
